@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&family=Rambla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body{
+    margin: 0;
+    font-family: "Maven Pro", serif;
+}
+.Navigation{
+    display: flex;
+    justify-content: space-between;
+    background-color: cornflowerblue;
+    align-items: center;
+    color: #fff;
+    padding: 0 15px;
+}
+@media screen and (max-width:600px) {
+    .Navigation{
+        margin: 20px;
+        box-sizing: border-box;
+        padding: 0;
+        border-radius: 10px;
+        padding: 20px 10px 20px 0;
+        position: fixed;
+        z-index: 2;
+        background-color: rgba(100, 148, 237, 0.668);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        justify-content: flex-start;
+    }
+    .Navigation nav{
+        /* background-color: aquamarine; */
+        padding: 0;
+    }
+    .Navigation button{
+        padding: 5px 10px;
+    }
+    .Navigation a{
+        margin-left: 10px;
+    }
+}
+.nav-icons i{
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 200ms;
+}
+.nav-icons i:hover{
+    color: navy;
+    transform: scale(1.5);
+}
+nav{
+    padding: 20px; 
+}
+a{
+    margin-left: 30px; 
+    text-decoration: none; 
+    color: rgb(255, 251, 251); 
+}
+button{
+    padding: 10px 30px; 
+    border: 0; 
+    color: cornflowerblue; 
+    border-radius: 2px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    height: 60vh;
+}
+@media screen and (max-width:600px) {
+    main{
+        background: radial-gradient(cornflowerblue,rgb(255, 255, 255));
+    }
+    .Navigation h2{
+        display: none;
+    }
+    main h1{
+        text-align: center;
+    }
+}
+.About p{
+    width: 50%;
+    text-align: center;
+}
+main span{
+    color: cornflowerblue; 
+    font-family: papyrus; 
+}
+
+/* _________________________________________________________________ */
+
+.About{
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    padding: 30px;
+}
+.About img{
+    width: 350px;
+    border-radius: 5px;
+}
+@media screen and (max-width:600px) {
+    .About{
+        flex-direction: column-reverse;
+    }
+    .About img{
+        width: 300px;
+        border-radius: 5px;
+    }
+    .About p{
+        width: 100%;
+        padding: 20px;
+        height: 150px;
+        overflow-y: scroll;
+        text-align: justify;
+    }
+}
+.Ratings{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    padding: 50px;
+}
+.Ratings li{
+    list-style: none;
+    text-align: center;
+}
+li:nth-child(1) p{
+    padding-left: 15px;
+}
+.Ratings i{
+    font-size: 3rem;
+}
+.Ratings span{
+    color: cornflowerblue;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+@media  screen and (max-width:600px) {
+    .Ratings{
+        flex-direction: column;
+    }
+    .Ratings li{
+       padding: 15px 0  ;
+       width: 300px;
+       border-bottom: 1px solid #fff;
+       justify-content: space-around;
+       margin: 10px 0;
+    }
+    .Ratings li:last-child{
+        border-bottom: none;
+    }
+    header{
+        text-align: center;
+    }
+}
+header{
+    background-color: rgb(230, 230, 230);
+    padding: 15px;
+    padding-left: 30px;
+    /* text-align: center; */
+}
+
+header h1{
+    font-weight: lighter;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    color: rgb(236, 174, 60);
+}
+.Library{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.books{
+    box-shadow: 0 0 5px gray;
+    height: 300px;
+    width: 285px;
+    margin: 10px;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+@media screen and (max-width:600px) {
+    .books{
+        height: 350px;
+        width: 350px;
+   }
+   .icons i{
+    margin: 15px;
+   }
+}
+.books:hover img{
+    transform: scale(0.5) translateY(-60px);
+    border-radius: 50%;
+    width: 75%;
+}
+.books img{
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    height: 75%;
+    transition: .50s ease-in-out;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+}
+.books:hover{
+    box-shadow: 0 0 5px cornflowerblue;
+}
+.icons button{
+    display: none;
+}
+.books:hover button{
+    display: inline-block;
+}
+.icons button:hover{
+    color: orange;
+    cursor: pointer;
+}
+.icons button:active{
+    background-color: #e6e3e3;
+}
+.icons i{
+    margin: 10px;
+}
+.icons{
+    transform: translateY(30px);
+}
+.author{
+    transform: translateY(100px);
+}
+.Reviews{
+    background-color: rgb(230, 230, 230);
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.review{
+    width: 350px;
+    height: 250px;
+    box-shadow: 0 0 5px grey;
+    border-radius: 5px;
+    margin: 5px;
+}
+@media screen and (max-width:600px) {
+  .Reviews{
+    flex-direction: column;
+  }
+}

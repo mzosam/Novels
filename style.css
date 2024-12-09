@@ -246,9 +246,7 @@ header h1{
 .Contacts{
     padding: 20px;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    box-sizing: border-box;
 }
 .Contacts img{
     width: 400px;
@@ -280,7 +278,7 @@ textarea{
     border-radius: 5px;
     outline: 0;
     border: 1px solid grey;
-    padding: 6px;
+    padding: 10px;
     
 }
 legend{
@@ -300,7 +298,6 @@ footer{
         display: none;
     }
     .Contacts{
-        flex-wrap: wrap;
         padding: 20px;
     }  
     fieldset{
@@ -308,8 +305,5 @@ footer{
     }
     legend{
         display: none;
-    }
-    .Contacts form{
-        width: 100%;
     }
 }

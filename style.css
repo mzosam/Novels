@@ -256,7 +256,7 @@ header h1{
     width: 400px;
     order: -1;
 }
-form{
+.Contacts form{
     padding: 20px;
 }
 form input{

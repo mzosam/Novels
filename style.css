@@ -263,7 +263,7 @@ header h1{
     flex-direction: column;
 }
 form input{
-    margin: 20px;
+    margin: 10px;
 }
 input[type = text]{
    padding: 15px;
@@ -311,5 +311,8 @@ footer{
     }
     legend{
         display: none;
+    }
+    .Contacts form{
+        width: 100%;
     }
 }

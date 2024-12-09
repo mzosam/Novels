@@ -179,15 +179,12 @@
     </header>
 
     <section class="Contacts">
-        <form action="">
-            <fieldset>
-                <legend>Connect with us</legend>
-                <input type="text" name="txtName" placeholder="First name">
-                <input type="text" name="txtLastName" placeholder="Last name">
-                <input type="text" name="Email" placeholder="Your email">
-                <textarea name="message" id="" rows="5" placeholder="type your message..."></textarea>
-                <input type="submit" value="Send message">
-            </fieldset>
+        <form>
+            <input type="text" id="name" name="name" placeholder="First name" required>
+            <input type="text"name="txtLastName" placeholder="Last name" required>
+            <input type="email" name="email" placeholder="Email" requred>
+            <textarea name="message" rows="5" placeholder="type your message ..." required></textarea>
+            <button type="submit">Send Message</button>
         </form>
         <img src="images/contact.jpg" alt="">
     </section>

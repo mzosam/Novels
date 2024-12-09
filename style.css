@@ -3,9 +3,6 @@ body{
     margin: 0;
     font-family: "Maven Pro", serif;
 }
-html{
-    overflow-x: hidden !important;
-}
 .Navigation{
     display: flex;
     justify-content: space-between;

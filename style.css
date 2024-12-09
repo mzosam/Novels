@@ -259,22 +259,21 @@ header h1{
 }
 .Contacts form{
     padding: 20px;
-}
-form input{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+}
+form input{
     margin: 20px;
 }
 input[type = text]{
-   padding: 15px 200px 15px 15px;
+   padding: 15px;
    border: 1px solid grey;
    border-radius: 5px;
    outline: 0;
    color: gray;
 }
 input[type = submit]{
-    padding: 10px 150px;
+    padding: 10px;
     border: none;
     border-radius: 3px;
     background-color: cornflowerblue;

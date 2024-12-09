@@ -267,9 +267,7 @@ form input{
 }
 input[type = text]{
    padding: 15px 200px 15px 15px;
-   border: none;
-   box-shadow: 0 0 3px grey;
-   -webkit-box-shadow: 0 0 3px grey;
+   border: 1px solid grey;
    border-radius: 5px;
    outline: 0;
    color: gray;
@@ -284,10 +282,9 @@ textarea{
     margin-left: 20px;
     border-radius: 5px;
     outline: 0;
-    border: none;
+    border: 1px solid grey;
     padding: 6px;
-    box-shadow: 0 0 3px grey;
-    -webkit-box-shadow: 0 0 3px grey;
+    
 }
 legend{
     color: cornflowerblue;

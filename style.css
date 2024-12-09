@@ -252,41 +252,16 @@ header h1{
     width: 400px;
     order: -1;
 }
-.Contacts form{
-    padding: 20px;
+.Contacts form {
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
-form input{
-    margin: 10px;
-}
-input[type = text]{
-   padding: 15px;
-   border: 1px solid grey;
-   border-radius: 5px;
-   outline: 0;
-   color: gray;
-}
-input[type = submit]{
+
+input, textarea {
     padding: 10px;
-    border: none;
-    border-radius: 3px;
-    background-color: cornflowerblue;
-}
-textarea{
-    margin-left: 20px;
-    border-radius: 5px;
-    outline: 0;
-    border: 1px solid grey;
-    padding: 10px;
-    
-}
-legend{
-    color: cornflowerblue;
-}
-fieldset{
-    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
 }
 footer{
     padding: 20px;

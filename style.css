@@ -243,11 +243,6 @@ header h1{
 .author{
     transform: translateY(100px);
 }
-.Contacts{
-    padding: 20px;
-    display: flex;
-    align-items: center;
-}
 .Contacts img{
     width: 400px;
     order: -1;

@@ -251,6 +251,7 @@ header h1{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    box-sizing: border-box;
 }
 .Contacts img{
     width: 400px;

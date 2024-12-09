@@ -256,7 +256,11 @@ input, textarea {
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px; 
+    border-radius: 5px;
+    color: grey;
+}
+input[type=submit]{
+    color: #fff;
 }
 footer{
     padding: 20px;

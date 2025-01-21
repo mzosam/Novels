@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&family=Rambla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body{
+    margin: 0;
+    font-family: "Maven Pro", serif;
+}
+.Navigation{
+    display: flex;
+    justify-content: space-between;
+    background-color: cornflowerblue;
+    align-items: center;
+    color: #fff;
+    padding: 0 15px;
+}
+@media screen and (max-width:600px) {
+    .Navigation{
+        margin: 20px;
+        /* box-sizing: border-box; */
+        padding: 0;
+        border-radius: 10px;
+        padding: 20px 10px 20px 0;
+        position: fixed;
+        z-index: 2;
+        background-color: rgba(100, 148, 237, 0.668);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        justify-content: flex-start;
+    }
+    .Navigation nav{
+        /* background-color: aquamarine; */
+        padding: 0;
+    }
+    .Navigation button{
+        padding: 5px 10px;
+    }
+    .Navigation a{
+        margin-left: 10px;
+    }
+}
+.nav-icons i{
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 200ms;
+}
+.nav-icons i:hover{
+    color: navy;
+    transform: scale(1.5);
+}
+nav{
+    padding: 20px; 
+}
+a{
+    margin-left: 30px; 
+    text-decoration: none; 
+    color: rgb(255, 251, 251); 
+}
+a:hover{
+    color: navy;
+    font-weight: bold;
+}
+button{
+    padding: 10px 30px; 
+    border: 0; 
+    color: cornflowerblue; 
+    border-radius: 2px;
+}
+main{
+    background: url(images/4abd19dea8ed387b0959dd115d9807f3.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    height: 60vh;
+    position: relative;
+}
+
+main::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(210deg,black,rgba(0, 0, 0, 0.726),rgba(100, 148, 237, 0));
+
+}
+@media screen and (max-width:600px) {
+    main{
+        background: radial-gradient(cornflowerblue,rgb(255, 255, 255));
+    }
+    .Navigation h2{
+        display: none;
+    }
+    main h1{
+        text-align: center;
+    }
+}
+.About p{
+    width: 50%;
+    text-align: justify;
+}
+main span{
+    color: cornflowerblue; 
+    font-family: papyrus; 
+}
+main h1,
+main p{
+    z-index: 900;
+    color: #fff;
+}
+main p{
+    font-size: 2rem;
+}
+
+/* _________________________________________________________________ */
+
+.About{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    padding: 30px;
+}
+.About span{
+    color: cornflowerblue;
+}
+.About img{
+    width: 350px;
+    border-radius: 0 30% 0 30%;
+}
+@media screen and (max-width:600px) {
+    .About{
+        flex-direction: column-reverse;
+    }
+    
+    .About p{
+        width: 100%;
+        padding: 20px;
+        height: 150px;
+        overflow-y: scroll;
+        text-align: justify;
+    }
+
+    main::before{
+        display: none;
+    }
+    main h1, main p{
+        color: #000;
+    }
+}
+.Ratings{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    padding: 50px;
+}
+.Ratings li{
+    list-style: none;
+    text-align: center;
+}
+li:nth-child(1) p{
+    padding-left: 15px;
+}
+.Ratings i{
+    font-size: 3rem;
+}
+.Ratings span{
+    color: cornflowerblue;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+@media  screen and (max-width:600px) {
+    .Ratings{
+        flex-direction: column;
+    }
+    .Ratings li{
+       padding: 15px 0  ;
+       width: 300px;
+       border-bottom: 1px solid #fff;
+       justify-content: space-around;
+       margin: 10px 0;
+    }
+    .Ratings li:last-child{
+        border-bottom: none;
+    }
+    header{
+        text-align: center;
+    }
+}
+header{
+    background-color: rgb(230, 230, 230);
+    padding: 15px;
+    padding-left: 30px;
+    /* text-align: center; */
+}
+
+header h1{
+    font-weight: lighter;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    color: rgb(236, 174, 60);
+}
+.Library{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.books{
+    box-shadow: 0 0 5px gray;
+    height: 300px;
+    width: 285px;
+    margin: 10px;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+@media screen and (max-width:600px) {
+    .books{
+        height: 350px;
+        width: 350px;
+   }
+   .icons i{
+    margin: 15px;
+   }
+   .Library{
+    justify-content: center;
+   }
+}
+
+@media screen and (min-width:720px) and (max-width:900px){
+    section.About img{
+       width: 250px;
+    }
+    section.About p{
+        width: 60%;
+        max-height: 200px;
+        overflow-y: scroll;
+    }
+}
+.books:hover img{
+    transform: scale(0.5) translateY(-60px);
+    border-radius: 50%;
+    width: 75%;
+}
+.books img{
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    height: 75%;
+    transition: .50s ease-in-out;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+}
+.books:hover{
+    box-shadow: 0 0 5px cornflowerblue;
+}
+.icons button{
+    display: none;
+}
+.books:hover button{
+    display: inline-block;
+}
+.icons button:hover{
+    color: rgb(236, 174, 60);
+    cursor: pointer;
+}
+.icons button:active{
+    background-color: #e6e3e3;
+}
+.icons i{
+    margin: 10px;
+}
+.icons{
+    transform: translateY(30px);
+}
+.author{
+    transform: translateY(100px);
+}
+.Contacts img{
+    width: 400px;
+    order: -1;
+}
+.Contacts form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: grey;
+    outline-color: cornflowerblue;
+}
+
+footer{
+    padding: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.Contacts{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+form{
+    padding: 15px;
+    width: 50%;
+}
+form button{
+    background-color: cornflowerblue;
+    color: #fff;
+    padding: 15px;
+    transition: 100ms;
+    cursor: pointer;
+}
+form button:hover{
+    background-color: #333334;
+    color: cornflowerblue;
+}
+@media screen and (max-width:600px) {
+    .Contacts img{
+        display: none;
+    }
+    .Contacts{
+        padding: 10px;
+        display: block;
+    }  
+    fieldset{
+        border: 0;
+    }
+    legend{
+        display: none;
+    }
+    form{
+        padding: 15px;
+        width: auto;
+    }
+}
